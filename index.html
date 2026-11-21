@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carlos Fei Laurente — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">CFL<span class="accent-dot">.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link active" aria-current="page">Home</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <p class="eyebrow">PORTFOLIO / WEB DEVELOPER</p>
+        <h1 class="hero-title">Carlos Fei<br />Laurente.</h1>
+        <p class="hero-subtitle">Turning curiosity into meaningful web experiences.</p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">View projects <span aria-hidden="true">↗</span></a>
+          <a href="about.html" class="btn btn-secondary">About me <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="scroll-hint">
+          <span>SUMMARY &amp; SELECTED WORK</span>
+          <span class="accent-arrow" aria-hidden="true">↓</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tech Stack Strip -->
+    <section class="stack-strip">
+      <div class="container stack-strip-inner">
+        <div class="stack-label">
+          <span class="eyebrow">MY STACK</span>
+          <p class="muted-small">Technologies I work with</p>
+        </div>
+        <div class="stack-items">
+          <span class="stack-item">HTML</span>
+          <span class="stack-item">CSS</span>
+          <span class="stack-item">JavaScript</span>
+          <span class="stack-item">Python</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <p class="eyebrow">01 / SELECTED WORK</p>
+            <h2 class="section-title">Small ideas. Real projects.</h2>
+          </div>
+          <a href="projects.html" class="text-link">View all projects <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Card 1 -->
+          <article class="project-card">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <div class="card-header-row">
+              <h3><a href="projects.html#personal-portfolio" class="card-title-link">Personal portfolio</a></h3>
+              <a href="projects.html#personal-portfolio" class="icon-link" aria-label="Open Personal portfolio details">↗</a>
+            </div>
+            <p class="card-desc">A clean corner of the web to share my work, my skills, and what I'm learning.</p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="project-card">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <div class="card-header-row">
+              <h3><a href="projects.html#task-manager" class="card-title-link">Task manager</a></h3>
+              <a href="projects.html#task-manager" class="icon-link" aria-label="Open Task manager details">↗</a>
+            </div>
+            <p class="card-desc">A simple workspace for organizing tasks and staying focused on what matters.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA Banner -->
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">WHAT'S NEXT</p>
+          <h2 class="cta-title">Keep learning. Keep building.</h2>
+          <p class="muted-small">One project at a time.</p>
+        </div>
+        <a href="#top" class="back-to-top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">CFL<span class="accent-dot">.</span></span>
+      <span class="footer-copy">© 2026 Carlos Fei Laurente — Built with clarity.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

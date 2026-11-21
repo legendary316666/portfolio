@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects — Carlos Fei Laurente</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="top">
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">CFL<span class="accent-dot">.</span></a>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="projects.html" class="nav-link active" aria-current="page">Projects</a>
+        <a href="about.html" class="nav-link">About</a>
+      </nav>
+      <button type="button" class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-hero">
+      <div class="container page-hero-row">
+        <div>
+          <p class="eyebrow">02 / SELECTED WORK</p>
+          <h1 class="page-title">Things I've built.</h1>
+          <p class="hero-subtitle">A collection of projects, experiments, and lessons along the way.</p>
+        </div>
+        <span class="meta-badge">04 PROJECTS IN DEVELOPMENT</span>
+      </div>
+    </section>
+
+    <!-- 2x2 Projects Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" id="personal-portfolio">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <h3>Personal portfolio</h3>
+            <p class="card-desc">A clean corner of the web to share my work, my skills, and what I'm learning.</p>
+            <div class="card-footer-action">
+              <button type="button" class="btn btn-primary btn-sm project-modal-btn"
+                data-title="Personal portfolio"
+                data-stack="HTML · CSS · JavaScript"
+                data-desc="Designed in Figma and coded from scratch as a responsive multi-page portfolio featuring a minimalist black and emerald green visual system.">
+                View Details <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" id="task-manager">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <h3>Task manager</h3>
+            <p class="card-desc">A simple workspace for organizing tasks and staying focused on what matters.</p>
+            <div class="card-footer-action">
+              <button type="button" class="btn btn-primary btn-sm project-modal-btn"
+                data-title="Task manager"
+                data-stack="HTML · CSS · JavaScript"
+                data-desc="A distraction-free task tracker built to organize coursework deadlines, daily priorities, and completed milestones with local browser storage.">
+                View Details <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" id="notes-app">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <h3>Notes app</h3>
+            <p class="card-desc">A lightweight space to jot down ideas, lecture notes, and quick thoughts.</p>
+            <div class="card-footer-action">
+              <button type="button" class="btn btn-primary btn-sm project-modal-btn"
+                data-title="Notes app"
+                data-stack="HTML · CSS · JavaScript"
+                data-desc="A fast, dark-mode note-taking interface focused on readability, keyboard navigation, and quick search across study notes.">
+                View Details <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" id="weather-dashboard">
+            <div class="image-placeholder">
+              <span>Image of project</span>
+            </div>
+            <h3>Weather dashboard</h3>
+            <p class="card-desc">A simple way to explore current weather and forecasts with a clean interface that keeps the essentials in focus.</p>
+            <div class="card-footer-action">
+              <button type="button" class="btn btn-primary btn-sm project-modal-btn"
+                data-title="Weather dashboard"
+                data-stack="HTML · CSS · JavaScript · API"
+                data-desc="An atmospheric forecast dashboard displaying real-time temperature, humidity, and multi-day outlooks using clean data cards.">
+                View Details <span aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Closing CTA Banner -->
+    <section class="cta-section">
+      <div class="container cta-inner">
+        <div>
+          <p class="eyebrow">WHAT'S NEXT</p>
+          <h2 class="cta-title">Keep learning. Keep building.</h2>
+          <p class="muted-small">One project at a time.</p>
+        </div>
+        <a href="#top" class="back-to-top">Back to top <span aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-top">
+        <span class="eyebrow" id="modal-stack">HTML · CSS · JavaScript</span>
+        <button type="button" class="modal-close" id="modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <h3 id="modal-title" class="modal-heading">Project Title</h3>
+      <p id="modal-desc" class="card-desc">Project description.</p>
+      <div class="modal-actions">
+        <button type="button" class="btn btn-secondary btn-sm" id="modal-done">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-brand">CFL<span class="accent-dot">.</span></span>
+      <span class="footer-copy">© 2026 Carlos Fei Laurente — Built with clarity.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
